@@ -120,7 +120,7 @@ export function Contact() {
       <SectionHeading
         eyebrow="Contact"
         title="Let's build something measurable"
-        description="Hiring for data, BI, or analytics engineering? I'd love to talk about how I can add value from day one."
+        description="Turning raw data into actionable business insights — where analytics meets strategy. If you're building a team that values data-driven decisions, let's have a conversation."
       />
 
       <div className="mx-auto mt-12 max-w-5xl">

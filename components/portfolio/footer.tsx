@@ -4,7 +4,7 @@ import { GithubIcon, LinkedinIcon } from './brand-icons'
 const socials = [
   { icon: LinkedinIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
   { icon: GithubIcon, href: 'https://github.com', label: 'GitHub' },
-  { icon: Mail, href: 'mailto:mohit.wat@example.com', label: 'Email' },
+  { icon: Mail, href: '#contact', label: 'Contact' },
 ]
 
 export function Footer() {
