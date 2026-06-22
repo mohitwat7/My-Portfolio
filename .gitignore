@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Build & Output
+.next/
+out/
+dist/
+build/
+.turbo/
+
+# Environment Variables & Credentials
+.env
+.env.local
+.env.*.local
+.env*.local
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS specific
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Logging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+.vercel/
+
+# Package manager lock files (choose based on your package manager)
+# For npm: uncomment below
+# package-lock.json
+# For yarn: uncomment below
+# yarn.lock
+# For pnpm: keep pnpm-lock.yaml tracked (recommended)
+
+# Misc
+.cache/
+.next/cache/
+.eslintcache
+*.pem
