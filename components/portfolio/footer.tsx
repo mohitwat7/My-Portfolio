@@ -38,7 +38,7 @@ export function Footer() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href="/Resume_MohitWat.pdf"
             className="inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
           >
             <Download className="size-4" />

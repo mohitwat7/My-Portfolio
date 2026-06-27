@@ -75,7 +75,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="/resume.pdf"
+            href="/Resume_MohitWat.pdf"
             className="hidden items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03] sm:inline-flex"
           >
             <Download className="size-4" />
@@ -119,7 +119,7 @@ export function Navbar() {
             ))}
             <li>
               <a
-                href="/resume.pdf"
+                href="/Resume_MohitWat.pdf"
                 onClick={() => setOpen(false)}
                 className="mt-1 flex items-center justify-center gap-2 rounded-lg bg-primary px-3 py-2.5 text-sm font-medium text-primary-foreground"
               >

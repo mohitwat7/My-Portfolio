@@ -71,7 +71,7 @@ export function Hero() {
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
               <a
-                href="/resume.pdf"
+                href="/Resume_MohitWat.pdf"
                 className="inline-flex items-center gap-2 rounded-xl border border-border bg-card/50 px-5 py-3 text-sm font-medium transition-colors hover:bg-card"
               >
                 <Download className="size-4" />
