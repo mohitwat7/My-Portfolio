@@ -25,7 +25,7 @@ export function Hero() {
         className="pointer-events-none absolute -right-40 top-40 -z-10 size-[420px] rounded-full bg-accent-blue/15 blur-[120px]"
       />
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.4fr_1fr]">
+      <div className="mx-auto grid max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-[1.4fr_1fr]">
         <div>
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-3 py-1 text-xs text-muted-foreground">
@@ -62,24 +62,25 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={260}>
-            <div className="mt-7 flex flex-wrap items-center gap-3">
+            <div className="mt-7 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-3">
               <a
                 href="#projects"
-                className="group inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
+                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03] sm:w-auto w-full"
               >
                 View Projects
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
               <a
                 href="/resume.pdf"
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-card/50 px-5 py-3 text-sm font-medium transition-colors hover:bg-card"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card/50 px-5 py-3 text-sm font-medium transition-colors hover:bg-card sm:w-auto w-full"
               >
                 <Download className="size-4" />
-                Download Resume
+                <span className="sm:inline">Download Resume</span>
+                <span className="sm:hidden">Resume</span>
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:w-auto w-full"
               >
                 <Mail className="size-4" />
                 Contact Me
@@ -95,7 +96,7 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={200} className="relative mx-auto w-full max-w-sm">
+        <Reveal delay={200} className="relative mx-auto hidden w-full max-w-sm lg:block">
           <div className="relative">
             <div
               aria-hidden="true"
@@ -103,20 +104,12 @@ export function Hero() {
             />
             <div className="glass glow-purple relative aspect-[4/5] overflow-hidden rounded-[1.75rem] p-2">
               <Image
-                src="/mohit-portrait-light.jpg"
+                src="/mohit-headshot.png"
                 alt="Portrait of Mohit Wat"
                 fill
                 sizes="(max-width: 1024px) 384px, 32vw"
                 priority
-                className="rounded-[1.4rem] object-cover object-center dark:hidden"
-              />
-              <Image
-                src="/mohit-portrait-dark.jpg"
-                alt="Portrait of Mohit Wat"
-                fill
-                sizes="(max-width: 1024px) 384px, 32vw"
-                priority
-                className="hidden rounded-[1.4rem] object-cover object-center dark:block"
+                className="rounded-[1.4rem] object-cover object-center"
               />
             </div>
           </div>
@@ -124,7 +117,7 @@ export function Hero() {
       </div>
 
       <Reveal delay={360}>
-        <dl className="mx-auto mt-14 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-4">
+        <dl className="mx-auto mt-12 grid max-w-4xl grid-cols-2 gap-2.5 sm:gap-3 sm:grid-cols-4 lg:mt-14">
           {metrics.map((m) => (
             <div
               key={m.label}

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { Mail, Phone, MapPin, Send, Check, Loader2 } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Check, LoaderCircle } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from './brand-icons'
 import { SectionHeading } from './section-heading'
 import emailjs from '@emailjs/browser'
@@ -124,7 +124,7 @@ export function Contact() {
       />
 
       <div className="mx-auto mt-12 max-w-5xl">
-        <div className="glass glow-purple grid gap-8 rounded-3xl p-6 sm:p-8 lg:grid-cols-[1fr_1.2fr]">
+        <div className="glass glow-purple grid gap-8 rounded-3xl p-6 sm:p-8 grid-cols-1 lg:grid-cols-[1fr_1.2fr]">
           {/* Left Column - Contact Info */}
           <div>
             <h3 className="font-heading text-xl font-semibold">Get in touch</h3>
@@ -168,7 +168,7 @@ export function Contact() {
 
           {/* Right Column - Contact Form */}
           <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
               <Field
                 label="Name"
                 id="name"
@@ -220,7 +220,7 @@ export function Contact() {
             >
               {status === 'sending' && (
                 <>
-                  <Loader2 className="size-4 animate-spin" />
+                  <LoaderCircle className="size-4 animate-spin" />
                   Sending...
                 </>
               )}

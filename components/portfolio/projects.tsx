@@ -79,11 +79,11 @@ export function Projects() {
               </span>
             </div>
             <div className="p-6 sm:p-8">
-              <div className="flex flex-wrap items-start justify-between gap-4">
+              <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <h3 className="font-heading text-2xl font-semibold sm:text-3xl">
                   GMATOOL
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex w-full flex-wrap gap-2 sm:w-auto">
                   <a
                     href="#"
                     className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground transition-transform hover:scale-[1.04]"
@@ -115,7 +115,7 @@ export function Projects() {
                 attribution, and UI.
               </p>
 
-              <div className="mt-6 grid gap-2 sm:grid-cols-2">
+              <div className="mt-6 grid gap-2 grid-cols-1 sm:grid-cols-2">
                 {flagshipFeatures.map((f) => (
                   <div
                     key={f}
@@ -142,7 +142,7 @@ export function Projects() {
         </Reveal>
 
         {/* Other projects */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2">
           {projects.map((p, i) => (
             <Reveal key={p.title} delay={i * 100}>
               <article className="flex h-full flex-col rounded-3xl border border-border bg-card/40 p-6 transition-colors hover:border-primary/40">

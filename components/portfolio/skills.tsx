@@ -43,7 +43,7 @@ export function Skills() {
         description="Strongest first — the languages and systems I reach for to build, move, and visualize data end to end."
       />
 
-      <div className="mx-auto mt-12 grid max-w-5xl gap-6 lg:grid-cols-[1.3fr_1fr]">
+      <div className="mx-auto mt-12 grid max-w-5xl gap-6 grid-cols-1 lg:grid-cols-[1.3fr_1fr]">
         <Reveal>
           <div className="rounded-3xl border border-border bg-card/40 p-6 sm:p-7">
             <h3 className="font-heading text-lg font-semibold">Core skills</h3>
